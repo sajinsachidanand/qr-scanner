@@ -1,0 +1,24 @@
+<scanner (qrCodeEvent)="getQrCodeInfo($event)">
+    
+</scanner>
+
+<div *ngIf="isSuccess"  class="col-12" style="padding-left: 400px;padding-right: 400px;">
+    <div class="">
+        <div>
+            <div class="">
+                <div>
+                    <h3 class="">Result</h3>
+                    <div>
+                        {{ chargerDetail.chargerId}}
+                    </div>
+                    <div>
+                        {{ chargerDetail.location}}
+                    </div>
+                    <div>
+                        {{ chargerDetail.status}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
