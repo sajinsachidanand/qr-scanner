@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  navigateToScanner() {
+  navigateToScanner(event : Event) {
     this.router.navigate(['/scan']);
   }
 

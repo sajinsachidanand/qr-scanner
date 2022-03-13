@@ -9,9 +9,9 @@ import { ChargerDetail } from '../model/ChargerDetail.model';
 })
 export class AppScannerComponent implements OnInit {
 
-  private chargerDetail : ChargerDetail;
+  chargerDetail : ChargerDetail = { chargerId:'', location:'', status:''};
 
-  private isSuccess : boolean = false;
+  isSuccess : boolean = false;
 
   constructor(private chargerDetails : ChargerDetailsService) { }
 
@@ -19,7 +19,6 @@ export class AppScannerComponent implements OnInit {
   }
 
   getQrCodeInfo(event : string){
-    console.log('sajin', event);
     this.chargerDetails.getChargerInfo(event).subscribe(
       (data: ChargerDetail) => {
         console.log(data);

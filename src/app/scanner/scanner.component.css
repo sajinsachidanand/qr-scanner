@@ -4,5 +4,20 @@
 }
 :host zxing-scanner::ng-deep {
     border-style: solid;
-    border-color: #62ff5d;
+    border-color: #111311;
 } 
+.center-text {
+   text-align: center;
+   margin-left: 42%;
+}
+.mat-icon{
+    height:128px !important;
+    width:128px !important;
+    font-size:128px !important;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}

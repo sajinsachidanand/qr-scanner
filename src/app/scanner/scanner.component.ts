@@ -8,8 +8,8 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ScannerComponent implements OnInit {
 
-  private scanning: boolean = true;
-  private information: string = 'Scanning ....';
+  scanning: boolean = true;
+  information: string = 'Scanning ....';
 
   @Output() qrCodeEvent = new EventEmitter<string>();
 
@@ -28,8 +28,10 @@ export class ScannerComponent implements OnInit {
   }
 
   public enableScanner() {
+    console.log("------------------", this.scanning);
     this.scanning = !this.scanning;
     this.information = 'Scanning ....';
+    console.log("------------------", this.scanning);
   }
 
 }
